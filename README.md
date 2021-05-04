@@ -41,3 +41,15 @@ include <iostream>
 ``` c++ {.line-numbers}
 import <iostream>;
 ```
+
+## Enum class
+
+``` C++ {.line-numbers}
+enum class PieceType
+{
+    King = 1,
+    Queen,
+    Rook = 10,
+    Pawn
+};
+```

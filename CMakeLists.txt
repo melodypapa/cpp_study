@@ -8,4 +8,5 @@ set(CMAKE_CXX_COMPILER /opt/local/bin/g++)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(helloworld src/hello_world/hello_world.cpp)
+add_executable(HelloWorld src/hello_world/hello_world.cpp)
+add_executable(enum_class src/enum_class/enum_class.cpp)
