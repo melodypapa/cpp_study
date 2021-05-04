@@ -4,26 +4,10 @@
 
 Create the repository for C++ and write down the notes
 
-## C++20
+## Setup Environment
 
-### Install gcc on Mac
+* [Install gcc on Mac with macport](docs/env.md#install_gcc_on_nac_with_macport)
 
-```
-sudo port install gcc10
-```
-
-```
-port select gcc
-
-Available versions for gcc:
-  mp-gcc10
-  mp-gcc9 (active)
-  none
-
-sudo port select gcc mp-gcc10
-
-Selecting 'mp-gcc10' for 'gcc' succeeded. 'mp-gcc10' is now active.
-```
 
 
 ## Include vs. import
@@ -42,14 +26,7 @@ include <iostream>
 import <iostream>;
 ```
 
-## Enum class
+## Language
 
-``` C++ {.line-numbers}
-enum class PieceType
-{
-    King = 1,
-    Queen,
-    Rook = 10,
-    Pawn
-};
-```
+* [Enumerated Types](docs/enum.md)
+* [Structs](docs/structs.md)

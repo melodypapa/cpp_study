@@ -10,3 +10,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(HelloWorld src/hello_world/hello_world.cpp)
 add_executable(enum_class src/enum_class/enum_class.cpp)
+add_executable(structs src/structs/main.cpp)
