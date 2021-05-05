@@ -10,9 +10,29 @@
                 "/System/Library/Frameworks",
                 "/Library/Frameworks"
             ],
-            "compilerPath": "/opt/local/bin/clang",
+            "compilerPath": "gcc",
             "cStandard": "c17",
             "cppStandard": "c++20"
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:\\Utilities\\msys64\\usr\\bin\\gcc.exe",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++20",
+            "compilerArgs": [
+                "--std=c++2a"
+            ],
+            "intelliSenseMode": "windows-gcc-x64",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
     "version": 4
