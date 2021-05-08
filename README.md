@@ -1,4 +1,10 @@
-[TOC]
+- [C++ Study notes](#c-study-notes)
+  - [Setup Environment](#setup-environment)
+  - [Include vs. import](#include-vs-import)
+    - [Include](#include)
+    - [Import](#import)
+  - [Language](#language)
+  - [Debug](#debug)
 
 # C++ Study notes
 
@@ -30,3 +36,7 @@ import <iostream>;
 
 * [Enumerated Types](docs/enum.md)
 * [Structs](docs/structs.md)
+
+## Debug
+
+* [VS Code](docs/vs_code.md)
