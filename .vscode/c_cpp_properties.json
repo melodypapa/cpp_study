@@ -33,6 +33,23 @@
             "intelliSenseMode": "windows-gcc-x64",
             "compileCommands": "${workspaceFolder}/build/compile_commands.json",
             "configurationProvider": "ms-vscode.cmake-tools"
+        },
+        {
+            "name": "Cygwin",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\cygwin64\\usr\\include",
+                "C:\\cygwin64\\lib\\gcc\\x86_64-pc-cygwin\\9.3.0\\include\\c++"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "gnu17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerPath": "C:/cygwin64/bin/g++.exe"
         }
     ],
     "version": 4
