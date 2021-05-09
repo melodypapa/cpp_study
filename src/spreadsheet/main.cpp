@@ -6,6 +6,10 @@ void printCell(const SpreadSheetCell & cell){
 }
 
 int main(){
-    SpreadSheetCell * pCell = new SpreadSheetCell();
-    printCell(*pCell);
+    SpreadSheetCell myCell, anotherCell;
+
+    myCell.setValue(6);
+    anotherCell.setString("3.2");
+    std::cout << "Cell 1: " << myCell.getValue() << std::endl;
+    std::cout << "Cell 2: " << anotherCell.getValue() << std::endl;
 }
