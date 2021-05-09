@@ -19,6 +19,19 @@
 			],
 			"group": "build",
 			"detail": "compiler: /opt/local/bin/g++"
+		},
+		{
+			"type": "shell",
+			"label": "cmake",
+			"command": "cmake",
+			"args": ["-G", "Unix Makefiles", ".."],
+			"options": {
+				"cwd": "${workspaceFolder}/build"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
 		}
 	]
 }
