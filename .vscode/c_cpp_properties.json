@@ -31,7 +31,6 @@
                 "--std=c++2a"
             ],
             "intelliSenseMode": "windows-gcc-x64",
-            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
             "configurationProvider": "ms-vscode.cmake-tools"
         },
         {
