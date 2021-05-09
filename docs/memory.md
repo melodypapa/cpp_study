@@ -15,6 +15,8 @@
       - [get() method](#get-method-1)
       - [reset() method](#reset-method-1)
       - [release() method](#release-method-1)
+      - [use_count() method](#use_count-method)
+      - [Type cast](#type-cast-1)
 # Memory
 
 ## Type Cast
@@ -168,4 +170,12 @@ It does not support release()
 
 The *user_count()* method is to retrieve the number of *shared_ptr* instances.
 
+#### Type cast
 
+The functions are available to cast *shared_ptr*:
+* const_pointer_cast()
+* dynamic_pointer_cast()
+* static_pointer_cast()
+* reinterpret_pointer_cast() [C++17]
+
+all these functions behaviors are similar as *const_cast()*, *dynamic_cast()*, *static_cast()*, *reinterpret_cast()*

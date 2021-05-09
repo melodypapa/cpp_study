@@ -22,9 +22,22 @@
 		},
 		{
 			"type": "shell",
-			"label": "cmake",
+			"label": "cmake (Unix makefiles)",
 			"command": "cmake",
 			"args": ["-G", "Unix Makefiles", ".."],
+			"options": {
+				"cwd": "${workspaceFolder}/build"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"type": "shell",
+			"label": "cmake (MinGW makefiles)",
+			"command": "cmake",
+			"args": ["-G", "MinGW Makefiles", ".."],
 			"options": {
 				"cwd": "${workspaceFolder}/build"
 			},

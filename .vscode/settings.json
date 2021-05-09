@@ -46,5 +46,6 @@
         "typeinfo": "cpp",
         "charconv": "cpp"
     },
-    "clang-format.language.cpp.enable": true
+    "clang-format.language.cpp.enable": true,
+    "C_Cpp.errorSquiggles": "Disabled"
 }
