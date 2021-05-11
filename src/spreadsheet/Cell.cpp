@@ -3,6 +3,14 @@
 
 using namespace std;
 
+SpreadSheetCell::SpreadSheetCell(double initialValue){
+   setValue(initialValue);
+}
+
+SpreadSheetCell::SpreadSheetCell(string_view initialValue){
+   setString(initialValue);
+}
+
 void SpreadSheetCell::setValue(double inValue)
 {
    value = inValue;

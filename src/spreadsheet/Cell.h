@@ -14,4 +14,8 @@ class SpreadSheetCell {
    double      getValue() const;
    void        setString(std::string_view inString);
    std::string getString() const;
+
+ public:
+   SpreadSheetCell(double initialValue);
+   SpreadSheetCell(std::string_view initialValue);
 };
