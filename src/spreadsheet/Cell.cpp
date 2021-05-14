@@ -1,40 +1,50 @@
 #include "Cell.h"
 #include <string>
+#include <iostream>
 
 using namespace std;
 
-SpreadSheetCell::SpreadSheetCell(double initialValue){
+/*SpreadsheetCell::SpreadsheetCell(){
+   std::cout << "Default Constructor" << std::endl;
+   this->value = 1;
+}*/
+
+SpreadsheetCell::SpreadsheetCell(double initialValue){
    setValue(initialValue);
 }
 
-SpreadSheetCell::SpreadSheetCell(string_view initialValue){
+SpreadsheetCell::SpreadsheetCell(string_view initialValue){
    setString(initialValue);
 }
 
-void SpreadSheetCell::setValue(double inValue)
+void SpreadsheetCell::setValue(double inValue)
 {
    value = inValue;
 }
 
-double SpreadSheetCell::getValue() const
+double SpreadsheetCell::getValue() const
 {
    return value;
 }
 
-void SpreadSheetCell::setString(string_view inString)
+void SpreadsheetCell::setString(string_view inString)
 {
    value = this->stringToDouble(inString);
 }
 
-string SpreadSheetCell::getString() const
+string SpreadsheetCell::getString() const
 {
    return this->doubleToString(value);
 }
 
-string SpreadSheetCell::doubleToString(double inValue) const {
+string SpreadsheetCell::doubleToString(double inValue) const {
     return to_string(inValue);
 }
 
-double SpreadSheetCell::stringToDouble(string_view inString) const {
+double SpreadsheetCell::stringToDouble(string_view inString) const {
     return strtod(inString.data(), nullptr);
+}
+
+SpreadsheetCell::~SpreadsheetCell(){
+   std::cout << "Destructor" << std::endl;
 }

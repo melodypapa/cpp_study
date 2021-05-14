@@ -3,7 +3,7 @@
 #include <string>
 #include <string_view>
 
-class SpreadSheetCell {
+class SpreadsheetCell {
  private:
    double      value = 0;
    std::string doubleToString(double inValue) const;
@@ -16,6 +16,8 @@ class SpreadSheetCell {
    std::string getString() const;
 
  public:
-   SpreadSheetCell(double initialValue);
-   SpreadSheetCell(std::string_view initialValue);
+   SpreadsheetCell() = default;
+   SpreadsheetCell(double initialValue);
+   SpreadsheetCell(std::string_view initialValue);
+   ~SpreadsheetCell();
 };
