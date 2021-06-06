@@ -4,10 +4,13 @@ project(CPP_Study)
 
 set(CMAKE_BUILD_TYPE debug)
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++20")
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++2a")
 #set(CMAKE_CXX_COMPILER /opt/local/bin/g++)
 #set(CMAKE_CXX_COMPILER C:\\cygwin64\\bin\\g++)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+
 
 FILE(GLOB SpreadSheetSources ./src/spreadsheet/*.cpp)
 
@@ -34,3 +37,6 @@ add_executable(base_type_initial src/base_type/initial.cpp)
 add_executable(exception_throw src/exception/throw.cpp)
 add_executable(template_def src/template/template_def.cpp)
 add_executable(template_cast src/template/cast.cpp)
+add_executable(concept src/template/concept.cpp)
+
+target_compile_options(concept PRIVATE -fconcepts)
