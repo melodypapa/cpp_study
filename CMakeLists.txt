@@ -38,5 +38,7 @@ add_executable(exception_throw src/exception/throw.cpp)
 add_executable(template_def src/template/template_def.cpp)
 add_executable(template_cast src/template/cast.cpp)
 add_executable(concept src/template/concept.cpp)
+add_executable(comma src/expression/comma.cpp)
+add_executable(checked_integer src/expression/checked_integer.cpp)
 
 target_compile_options(concept PRIVATE -fconcepts)
