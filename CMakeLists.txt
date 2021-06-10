@@ -40,5 +40,8 @@ add_executable(template_cast src/template/cast.cpp)
 add_executable(concept src/template/concept.cpp)
 add_executable(comma src/expression/comma.cpp)
 add_executable(checked_integer src/expression/checked_integer.cpp)
+add_executable(bucket src/expression/bucket.cpp)
+add_executable(type_conv src/expression/type_conv.cpp)
+add_executable(explicit_conv src/expression/explicit_conv.cpp)
 
 target_compile_options(concept PRIVATE -fconcepts)
