@@ -13,6 +13,11 @@ class BrakeCommand {
     double time_to_collision_s;
 };
 
+class ServiceBus {
+   public:
+    void publish(const BrakeCommand& command) {}
+};
+
 template <typename T>
 class AutoBrake {
    private:
@@ -32,18 +37,25 @@ class AutoBrake {
         this->collision_threshold_s = x;
     }
 
-    double get_collision_threshold_s() const {
+    double get_collision_threshold_s() const
+    {
         return this->collision_threshold_s;
     }
 
-    double get_speed_mps() const {
+    double get_speed_mps() const
+    {
         return this->get_speed_mps;
     }
 };
 
-int
-main()
+int main()
 {
-    std::cout << "Hello world" << std::endl;
-    return 1;
+    ServiceBus bus;
+    /*AutoBrake  auto_brake{[&bus](const auto& cmd) {
+        bus.publish(cmd);
+    }};*/
+
+    for (int i = 0; i < 1000; i++) {
+        
+    }
 }
